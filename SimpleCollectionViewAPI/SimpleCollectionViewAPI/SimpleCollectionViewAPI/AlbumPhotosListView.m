@@ -99,6 +99,7 @@
     if(dataSource.count>indexPath.row*4){
         cell.image1.image=dataSource[indexPath.row*4][@"image"];
         cell.image1.tag=indexPath.row*4;
+        [cell.image1.gestureRecognizers[0] setEnabled:YES];
         if([dataSource[indexPath.row*4][@"selected"] boolValue]){
             cell.selected1.hidden=NO;
         }else{
@@ -108,6 +109,7 @@
     if(dataSource.count>indexPath.row*4+1) {
         cell.image2.image=dataSource[indexPath.row*4+1][@"image"];
         cell.image2.tag=indexPath.row*4+1;
+        [cell.image2.gestureRecognizers[0] setEnabled:YES];
         if([dataSource[indexPath.row*4+1][@"selected"] boolValue]){
             cell.selected2.hidden=NO;
         }else{
@@ -117,6 +119,7 @@
     if(dataSource.count>indexPath.row*4+2){
         cell.image3.image=dataSource[indexPath.row*4+2][@"image"];
         cell.image3.tag=indexPath.row*4+2;
+        [cell.image3.gestureRecognizers[0] setEnabled:YES];
         if([dataSource[indexPath.row*4+2][@"selected"] boolValue]){
             cell.selected3.hidden=NO;
         }else{
@@ -126,6 +129,7 @@
     if(dataSource.count>indexPath.row*4+3){
         cell.image4.image=dataSource[indexPath.row*4+3][@"image"];
         cell.image4.tag=indexPath.row*4+3;
+        [cell.image4.gestureRecognizers[0] setEnabled:YES];
         if([dataSource[indexPath.row*4+3][@"selected"] boolValue]){
             cell.selected4.hidden=NO;
         }else{
@@ -161,7 +165,7 @@
     }
     if(selectImages.count>0){
         selectCount.hidden=NO;
-        selectCount.text=[NSString stringWithFormat:@"%ld",selectImages.count];
+        selectCount.text=[NSString stringWithFormat:@"%lu",selectImages.count];
     }else{
         selectCount.hidden=YES;
     }

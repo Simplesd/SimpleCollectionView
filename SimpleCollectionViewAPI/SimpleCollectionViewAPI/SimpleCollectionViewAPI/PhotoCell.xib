@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6185.11" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
+        <deployment defaultVersion="1280" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <objects>
@@ -75,22 +75,22 @@
                 <outlet property="selected4" destination="sRe-am-ccf" id="5o4-mx-OrU"/>
             </connections>
         </tableViewCell>
-        <tapGestureRecognizer id="mS3-Wu-3z5">
+        <tapGestureRecognizer enabled="NO" id="mS3-Wu-3z5">
             <connections>
                 <action selector="imageClick_Action:" destination="KGk-i7-Jjw" id="Ipa-lz-mWK"/>
             </connections>
         </tapGestureRecognizer>
-        <tapGestureRecognizer id="Ii6-z4-nu9">
+        <tapGestureRecognizer enabled="NO" id="Ii6-z4-nu9">
             <connections>
                 <action selector="imageClick_Action:" destination="KGk-i7-Jjw" id="qX8-Hn-jBN"/>
             </connections>
         </tapGestureRecognizer>
-        <tapGestureRecognizer id="JYm-tW-rUL">
+        <tapGestureRecognizer enabled="NO" id="JYm-tW-rUL">
             <connections>
                 <action selector="imageClick_Action:" destination="KGk-i7-Jjw" id="f49-kr-Ebg"/>
             </connections>
         </tapGestureRecognizer>
-        <tapGestureRecognizer id="CbT-Ow-eNp">
+        <tapGestureRecognizer enabled="NO" id="CbT-Ow-eNp">
             <connections>
                 <action selector="imageClick_Action:" destination="KGk-i7-Jjw" id="jQa-DQ-NEA"/>
             </connections>
